@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery | Portfolio Bootstrap</title>
+  <meta name="description" content="Responsywna galeria obrazow stworzona z wykorzystaniem siatki Bootstrap 5.">
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-brand shadow-sm" aria-label="Nawigacja glowna">
+      <div class="container">
+        <a class="navbar-brand fw-semibold" href="index.html">B. Bialobrzewski</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Przelacz menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="users.html">Users</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="gallery.html">Gallery</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="py-5 bg-light border-bottom">
+      <div class="container">
+        <h1 class="mb-3">Gallery</h1>
+        <p class="text-secondary mb-0">Zrzuty ekranu z aplikacji Vocabin. Galeria pokazuje kluczowe widoki aplikacji mobilnej.</p>
+      </div>
+    </section>
+
+    <section class="py-5 gallery-showcase">
+      <div class="container">
+        <h2 class="h4 section-title mb-2">Zrzuty aplikacji Vocabin</h2>
+        <p class="section-description mb-4">Miniatury sa celowo mniejsze dla czytelnosci siatki. Pelny podglad zobaczysz po kliknieciu.</p>
+        <div class="row g-5">
+          <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+            <button class="gallery-item p-0 border-0 bg-transparent w-100" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-title="Dictionary View" data-bs-image="images/gallery/dictionaryView1.png" data-bs-alt="Widok slownika w aplikacji Vocabin">
+              <div class="gallery-frame shadow-sm">
+                <img src="images/gallery/dictionaryView1.png" class="gallery-thumb img-fluid rounded" alt="Widok slownika w aplikacji Vocabin">
+              </div>
+            </button>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+            <button class="gallery-item p-0 border-0 bg-transparent w-100" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-title="Flashcard View" data-bs-image="images/gallery/flashcardView.png" data-bs-alt="Widok fiszek w aplikacji Vocabin">
+              <div class="gallery-frame shadow-sm">
+                <img src="images/gallery/flashcardView.png" class="gallery-thumb img-fluid rounded" alt="Widok fiszek w aplikacji Vocabin">
+              </div>
+            </button>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+            <button class="gallery-item p-0 border-0 bg-transparent w-100" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-title="Home Info View" data-bs-image="images/gallery/homeViewInfoExtended.png" data-bs-alt="Rozszerzony widok informacji na ekranie glownym Vocabin">
+              <div class="gallery-frame shadow-sm">
+                <img src="images/gallery/homeViewInfoExtended.png" class="gallery-thumb img-fluid rounded" alt="Rozszerzony widok informacji na ekranie glownym Vocabin">
+              </div>
+            </button>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+            <button class="gallery-item p-0 border-0 bg-transparent w-100" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-title="Saved Word Detail" data-bs-image="images/gallery/savedWordDetailView.png" data-bs-alt="Widok szczegolow zapisanego slowa w Vocabin">
+              <div class="gallery-frame shadow-sm">
+                <img src="images/gallery/savedWordDetailView.png" class="gallery-thumb img-fluid rounded" alt="Widok szczegolow zapisanego slowa w Vocabin">
+              </div>
+            </button>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+            <button class="gallery-item p-0 border-0 bg-transparent w-100" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-title="Session Configuration" data-bs-image="images/gallery/sessionConfigurationView.png" data-bs-alt="Konfiguracja sesji nauki w Vocabin">
+              <div class="gallery-frame shadow-sm">
+                <img src="images/gallery/sessionConfigurationView.png" class="gallery-thumb img-fluid rounded" alt="Konfiguracja sesji nauki w Vocabin">
+              </div>
+            </button>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+            <button class="gallery-item p-0 border-0 bg-transparent w-100" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-title="Session Results" data-bs-image="images/gallery/sessionResultsView.png" data-bs-alt="Widok wynikow sesji nauki w Vocabin">
+              <div class="gallery-frame shadow-sm">
+                <img src="images/gallery/sessionResultsView.png" class="gallery-thumb img-fluid rounded" alt="Widok wynikow sesji nauki w Vocabin">
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="galleryModalTitle">Podglad</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Zamknij"></button>
+        </div>
+        <div class="modal-body">
+          <img id="galleryModalImage" class="img-fluid rounded" src="images/gallery/dictionaryView1.png" alt="Podglad obrazu">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="py-4 border-top">
+    <div class="container d-flex flex-column flex-sm-row justify-content-between align-items-center gap-2 text-secondary">
+      <small>BB | 2026</small>
+      <div class="d-flex align-items-center gap-3">
+        <a href="https://github.com/Bsheskee" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <i class="bi bi-github fs-5" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/bsheskee" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <i class="bi bi-linkedin fs-5" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script>
+    const modal = document.getElementById("galleryModal");
+    if (modal) {
+      modal.addEventListener("show.bs.modal", function (event) {
+        const trigger = event.relatedTarget;
+        if (!trigger) {
+          return;
+        }
+        const title = trigger.getAttribute("data-bs-title") || "Podglad";
+        const imageSrc = trigger.getAttribute("data-bs-image") || "images/gallery/dictionaryView1.png";
+        const imageAlt = trigger.getAttribute("data-bs-alt") || "Podglad obrazu";
+
+        const modalTitle = document.getElementById("galleryModalTitle");
+        const modalImage = document.getElementById("galleryModalImage");
+        if (modalTitle) {
+          modalTitle.textContent = title;
+        }
+        if (modalImage) {
+          modalImage.src = imageSrc;
+          modalImage.alt = imageAlt;
+        }
+      });
+    }
+  </script>
+</body>
+</html>
